@@ -1,0 +1,7 @@
+cd premier_2cia
+git status
+git branch
+pwd          # should print /home/oussama/git_github/premier_2cia
+ls -a        # you should see a .git folder
+git status
+git branch
