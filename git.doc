@@ -30,3 +30,14 @@ git restore --staged fichier.txt  # retirer du staging
 git reset --soft HEAD~1           # annuler le dernier commit, garder les modifs
 git reset --hard HEAD~1           # annuler le dernier commit ET les modifs ⚠️
 git revert <hash>                 # créer un commit inverse (safe)
+git stash                         # mettre de côté
+git stash list                    # lister
+git stash pop                     # restaurer + supprimer
+git stash apply                   # restaurer sans supprimer
+git push origin ma-branche        # pousser une branche
+git pull origin main              # tirer la branche main
+git fetch --all --prune           # nettoyer les branches distantes
+git rm fichier.txt                # supprimer + indexer
+git mv ancien.txt nouveau.txt     # renommer
+git clean -n                      # voir ce qui serait supprimé
+git clean -f                      # supprimer les fichiers non suivis ⚠️
