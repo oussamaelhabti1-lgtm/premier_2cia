@@ -1,0 +1,32 @@
+git config --global user.name "Ton Nom"
+git config --global user.email "ton.email@example.com"
+git config --global init.defaultBranch main
+git config --list                 # voir la config
+  git init                          # initialiser un repo local
+git clone <url>                   # cloner un repo distant
+git clone <url> mon_dossier       # cloner dans un dossier nommé
+  git status                        # état des fichiers
+git log                           # historique des commits
+git log --oneline --graph --all   # historique visuel compact
+git diff                          # modifs non indexées
+git diff --staged                 # modifs indexées
+  git add fichier.txt               # ajouter un fichier
+git add .                         # ajouter tout
+git add -A                        # ajouter tout (y compris suppressions)
+git commit -m "message"           # commit
+git commit -am "message"          # add + commit (fichiers suivis seulement)
+git commit --amend                # modifier le dernier commit
+  git branch                        # lister les branches
+git branch ma-branche             # créer une branche
+git checkout ma-branche           # changer de branche
+git switch ma-branche             # idem (moderne)
+git checkout -b ma-branche        # créer + changer
+git switch -c ma-branche          # idem (moderne)
+git merge ma-branche              # fusionner dans la branche courante
+git branch -d ma-branche          # supprimer une branche
+git branch -D ma-branche          # forcer la suppression
+  git restore fichier.txt           # annuler les modifs (avant add)
+git restore --staged fichier.txt  # retirer du staging
+git reset --soft HEAD~1           # annuler le dernier commit, garder les modifs
+git reset --hard HEAD~1           # annuler le dernier commit ET les modifs ⚠️
+git revert <hash>                 # créer un commit inverse (safe)
